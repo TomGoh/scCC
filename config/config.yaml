@@ -6,7 +6,7 @@ dataset_dir: "./datasets"
 # train options
 batch_size: 256 # original set to 256
 start_epoch: 0
-epochs: 100
+epochs: 250
 classnum: 14
 # model options
 feature_dim: 64
