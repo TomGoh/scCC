@@ -5,6 +5,7 @@ from munkres import Munkres
 
 def evaluate(label, pred):
     # print(label,pred)
+    # print(len(set(label)))
     nmi = metrics.normalized_mutual_info_score(label, pred)
     ari = metrics.adjusted_rand_score(label, pred)
     f = metrics.fowlkes_mallows_score(label, pred)
@@ -45,6 +46,7 @@ def get_y_preds(y_true, cluster_assignments, n_clusters):
     confusion_matrix = metrics.confusion_matrix(y_true, cluster_assignments, labels=None)
     # compute accuracy based on optimal 1:1 assignment of clusters to labels
     cost_matrix = calculate_cost_matrix(confusion_matrix, n_clusters)
+    print(n_clusters)
     indices = Munkres().compute(cost_matrix)
     kmeans_to_true_cluster_labels = get_cluster_labels_from_indices(indices)
 

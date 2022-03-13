@@ -1,12 +1,12 @@
 # general
-seed: 42
+#seed: 24
 workers: 0
 dataset_dir: "./datasets"
 
 # train options
-batch_size: 256 # original set to 256
+batch_size: 1024 # original set to 256
 start_epoch: 0
-epochs: 250
+epochs: 100
 classnum: 14
 # model options
 feature_dim: 64

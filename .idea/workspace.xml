@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8b5f291-bed0-4ad7-9fbd-d6e9b01c11a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocessing/transformation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scValidation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scTransformationTest.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/evaluation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/mlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mlp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessing/transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/transformation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scCC.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scCC.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,9 @@
       <workItem from="1646876633954" duration="6349000" />
       <workItem from="1646892340474" duration="5482000" />
       <workItem from="1646917210667" duration="753000" />
-      <workItem from="1646961493676" duration="1460000" />
+      <workItem from="1646961493676" duration="3309000" />
+      <workItem from="1647068288226" duration="3182000" />
+      <workItem from="1647132721670" duration="8718000" />
     </task>
     <servers />
   </component>
@@ -151,6 +153,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/scCC$train.coverage" NAME="train Coverage Results" MODIFIED="1646548241868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scCC$train.coverage" NAME="train Coverage Results" MODIFIED="1646964697880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

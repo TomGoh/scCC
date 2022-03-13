@@ -12,14 +12,16 @@ def full_block(in_features, out_features, p_drop=0.0):
 
 class MLP(nn.Module):
 
-    def __init__(self, num_genes=5000, num_hidden=128, p_drop=0.0):
+    def __init__(self, num_genes=5000, num_hidden=64, p_drop=0):
         super().__init__()
         self.encoder = nn.Sequential(
-            nn.Dropout(p=0.3),
+            # nn.Dropout(p=0.3),
             full_block(in_features=num_genes, out_features=1024, p_drop=p_drop),
             full_block(in_features=1024, out_features=512, p_drop=p_drop),
+            # full_block(in_features=2048, out_features=1024, p_drop=p_drop),
             full_block(in_features=512, out_features=256, p_drop=p_drop),
             full_block(in_features=256, out_features=128, p_drop=p_drop),
+            full_block(in_features=128, out_features=64, p_drop=0.0),
         )
         self.rep_dim = num_hidden
 
