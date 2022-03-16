@@ -14,6 +14,8 @@ def chiasma(original, prob=1, percentage=0.8):
             copy[:, chiasma_pair[:, 0]], copy[:, chiasma_pair[:, 1]] = copy[:, chiasma_pair[:, 1]], copy[:,
                                                                                                     chiasma_pair[:, 0]]
             return copy
+        else:
+            return original
 
 
 def random_mask(original, prob=0.8, percentage=0.1):
@@ -36,19 +38,29 @@ def gaussian_noise(original, prob=0.8):
         if s<prob:
             cellShape = original.shape
             noise = 0.1 * torch.randn(size=cellShape)
-            copy = (original + noise).clone()
+            copy = original.clone()+noise
             return copy
 
 
 def transformation(original):
-    copy = gaussian_noise(original)
-    if copy is not None:
-        copy = chiasma(copy)
-    else:
-        copy = chiasma(original)
-    if copy is not None:
-        copy = random_mask(copy)
-    else:
-        copy = random_mask(original)
+    copy=torch.ones(size=original.shape)
+    # print(copy.shape)
+    for index,singleCell in enumerate(copy):
+        tmp=gaussian_noise(singleCell)
+        if tmp is not None:
+            copy[index]=tmp
+        else:
+            copy[index]=singleCell
+    
+    copy=chiasma(copy)
+    # copy = gaussian_noise(original)
+    # if copy is not None:
+    #     copy = chiasma(copy)
+    # else:
+    #     copy = chiasma(original)
+    # if copy is not None:
+    #     copy = random_mask(copy)
+    # else:
+    #     copy = random_mask(original)
     return copy
 
