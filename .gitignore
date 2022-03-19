@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 *.tar
+*.pdf
+阶段汇报.md
