@@ -44,15 +44,16 @@ def gaussian_noise(original, prob=0.8):
 
 def transformation(original):
     copy=torch.ones(size=original.shape)
-    # print(copy.shape)
-    for index,singleCell in enumerate(copy):
-        tmp=gaussian_noise(singleCell)
-        if tmp is not None:
-            copy[index]=tmp
-        else:
-            copy[index]=singleCell
     
-    copy=chiasma(copy)
+    # print(copy.shape)
+    # for index,singleCell in enumerate(copy):
+    #     tmp=gaussian_noise(singleCell)
+        # if tmp is not None:
+        #     copy[index]=tmp
+        # else:
+        #     copy[index]=singleCell
+    
+    # copy=chiasma(copy)
     # copy = gaussian_noise(original)
     # if copy is not None:
     #     copy = chiasma(copy)

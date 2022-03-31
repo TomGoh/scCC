@@ -18,7 +18,6 @@ class MLP(nn.Module):
             nn.Dropout(p=0.3),
             full_block(in_features=num_genes, out_features=1024, p_drop=p_drop),
             full_block(in_features=1024, out_features=512, p_drop=p_drop),
-            # full_block(in_features=2048, out_features=1024, p_drop=p_drop),
             full_block(in_features=512, out_features=256, p_drop=p_drop),
             full_block(in_features=256, out_features=128, p_drop=p_drop),
         )

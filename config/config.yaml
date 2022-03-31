@@ -4,7 +4,7 @@ workers: 0
 dataset_dir: "./datasets"
 
 # train options
-batch_size: 1714 # original set to 256
+batch_size: 64 # original set to 256
 start_epoch: 0
 epochs: 5000
 classnum: 14
@@ -12,7 +12,7 @@ classnum: 14
 feature_dim: 64
 model_path: "save/sc"
 reload: False
-num_genes: 6000
+num_genes: 3000
 
 # loss options
 learning_rate: 0.0001 # original set to 3e-4
