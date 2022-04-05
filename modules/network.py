@@ -41,3 +41,6 @@ class Network(nn.Module):
         c = self.cluster_projector(h)
         c = torch.argmax(c, dim=1)
         return c
+
+    def forward_embedding(self,x):
+        return self.mlp(x)

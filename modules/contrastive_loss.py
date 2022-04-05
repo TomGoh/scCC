@@ -28,7 +28,6 @@ class InstanceLoss(nn.Module):
         z = torch.cat((z_i, z_j), dim=0)
 
         sim = torch.matmul(z, z.T) / self.temperature
-        print(sim)
         sim_i_j = torch.diag(sim, self.batch_size)
         sim_j_i = torch.diag(sim, -self.batch_size)
 

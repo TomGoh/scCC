@@ -1,21 +1,20 @@
 # general
 #seed: 24
 workers: 0
-dataset_dir: "./datasets"
 
 # train options
-batch_size: 64 # original set to 256
-start_epoch: 0
-epochs: 5000
+batch_size: 1024 # original set to 256
+start_epoch: 1
+epochs: 500
 classnum: 14
 # model options
-feature_dim: 64
+feature_dim: 128
 model_path: "save/sc"
 reload: False
-num_genes: 3000
+num_genes: 2000
 
 # loss options
-learning_rate: 0.0001 # original set to 3e-4
+learning_rate: 0.00003 # original set to 3e-4
 weight_decay: 0.
 instance_temperature: 0.5
 cluster_temperature: 0.5
