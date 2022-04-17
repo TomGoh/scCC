@@ -5,11 +5,11 @@ workers: 0
 # train options
 batch_size: 1024 # original set to 256
 start_epoch: 1
-epochs: 500
+epochs: 200
 classnum: 14
 # model options
 feature_dim: 128
-model_path: "save/sc-no-bank-highvar-500-sctransformation"
+model_path: "save/sc-static-bank"
 reload: False
 num_genes: 2000
 
