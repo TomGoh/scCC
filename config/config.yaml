@@ -8,10 +8,10 @@ start_epoch: 1
 epochs: 200
 classnum: 14
 # model options
-feature_dim: 128
-model_path: "save/sc-static-bank"
+feature_dim: 64
+model_path: "save/sc-static-bank-500genes"
 reload: False
-num_genes: 2000
+num_genes: 500
 
 # loss options
 learning_rate: 0.00003 # original set to 3e-4
