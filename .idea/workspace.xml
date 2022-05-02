@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8b5f291-bed0-4ad7-9fbd-d6e9b01c11a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scTransformationTest.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluation/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluation/evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/mlp.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/mlp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing/transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/transformation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scCC.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scCC.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="e8b5f291-bed0-4ad7-9fbd-d6e9b01c11a2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,19 +37,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Documents/GitHub/scCC",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Documents\GitHub\scCC" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\GitHub\scCC\charts" />
+      <recent name="D:\Documents\GitHub\scCC\previous_notebook" />
       <recent name="D:\Documents\GitHub\scCC\modules" />
     </key>
   </component>
@@ -135,6 +130,7 @@
       <workItem from="1646961493676" duration="3309000" />
       <workItem from="1647068288226" duration="3182000" />
       <workItem from="1647132721670" duration="8718000" />
+      <workItem from="1650349579017" duration="1685000" />
     </task>
     <servers />
   </component>

@@ -3,18 +3,21 @@
 workers: 0
 
 # train options
-batch_size: 1024 # original set to 256
+batch_size: 4096 # original set to 256
+
 start_epoch: 1
 epochs: 200
 classnum: 14
 # model options
-feature_dim: 64
-model_path: "save/sc-static-bank-500genes"
+feature_dim: 128
+model_path: "save/sc-static-bank-rare-swap"
 reload: False
-num_genes: 500
+num_genes: 2000
 
 # loss options
 learning_rate: 0.00003 # original set to 3e-4
 weight_decay: 0.
-instance_temperature: 0.2 # original 0.5
-cluster_temperature: 0.2 # original 0.5
+instance_temperature: 0.5 # original 0.5
+cluster_temperature: 0.5 # original 0.5
+
+# 和数据关系很大，就得自己调试
