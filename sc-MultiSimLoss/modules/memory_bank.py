@@ -52,6 +52,30 @@ class MemoryBank():
 
 class StaticMemoryBank_for_MSLOSS():
 
+    def __init__(self,batch_size,x,dim,nn_counts,max_elements):
+        self.batch_size=batch_size
+        self.dim=dim
+        self.nn_counts=nn_counts
+        self.bank=hnswlib.Index(space='cosine',dim=dim)
+        self.bank.init_index(max_elements=max_elements, ef_construction=100, M=16)
+        self.bank.set_ef(100)
+        self.bank.set_num_threads(4)
+        self.bank.add_items(x)
+        self.x_data=x
+ 
+    def generate_data(self,sample):
+
+        labels,distances=self.bank.knn_query(sample,k=self.nn_counts)
+        pseudolabel=np.arange(labels.shape[0])
+        pseudolabel=np.repeat(pseudolabel,self.nn_counts).reshape(-1)
+        
+        labels=labels.reshape(-1)
+        data=self.x_data[labels]
+        
+        return data,pseudolabel
+
+class StaticMemoryBank_for_MSLOSS_SelfEnhanced():
+
     def __init__(self,batch_size,x,dim,nn_counts):
         self.batch_size=batch_size
         self.dim=dim
@@ -69,7 +93,18 @@ class StaticMemoryBank_for_MSLOSS():
         pseudolabel=np.arange(labels.shape[0])
         pseudolabel=np.repeat(pseudolabel,self.nn_counts).reshape(-1)
         
+        # print(labels[0])
+        self_index=labels[:,0]
+        labels[:,-1]=self_index
+        labels[:,-2]=self_index
+        labels[:,-3]=self_index
+        # print(self_index.shape)
+        # print(labels.shape)
+        # print(labels[0])
         labels=labels.reshape(-1)
+
         data=self.x_data[labels]
-        
+
         return data,pseudolabel
+    
+        

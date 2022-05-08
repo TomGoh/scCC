@@ -29,7 +29,7 @@ def run_leiden(data, leiden_n_neighbors=300):
 
 
 def cluster_embedding(embedding, cluster_number, Y, save_pred=False, cosine=True,
-                      leiden_n_neighbors=50, cluster_methods=["KMeans", "Leiden"]):
+                      leiden_n_neighbors=300, cluster_methods=["KMeans", "Leiden"]):
     result = {}
     if "KMeans" in cluster_methods:
         # evaluate K-Means

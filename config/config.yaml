@@ -3,14 +3,14 @@
 workers: 0
 
 # train options
-batch_size: 4096 # original set to 256
+batch_size: 512 # original set to 256
 
 start_epoch: 1
-epochs: 200
+epochs: 300
 classnum: 14
 # model options
 feature_dim: 128
-model_path: "save/sc-static-bank-rare-swap"
+model_path: "save/sc-static-bank"
 reload: False
 num_genes: 2000
 
